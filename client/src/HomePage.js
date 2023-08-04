@@ -3,17 +3,15 @@ import { Link } from "react-router-dom";
 
 import logo from './logo.svg';
 
-const HomePage = ({message}) => {
+const HomePage = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Link to="/cart">Go to cart</Link>
         <p>
-          <Link to="/cart">Go to cart</Link>
-          <h1>Hello World</h1>
-          {message}
+          Welcome to my Honepage
         </p>
-        <p>Version: 5</p>
       </header>
     </div>
   )
