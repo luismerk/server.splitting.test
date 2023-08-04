@@ -10,7 +10,7 @@ const HomePage = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <Link to="/cart">Go to cart</Link>
         <p>
-          Welcome to my Honepage
+          Welcome to my Homepage!
         </p>
       </header>
     </div>
