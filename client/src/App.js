@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import HomePage from './HomePage'
+import Cart from './Cart'
 
 class App extends Component {
   state = {
@@ -20,16 +22,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            <h1>Hello World</h1>
-            {this.state.message}
-          </p>
-          <p>Version: 5</p>
-        </header>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage message={this.state.message} />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
     );
   }
 }
