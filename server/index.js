@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'I am a homepage' })
 })
 
+app.get('/cart', (req, res) => {
+  res.json({ message: 'I am a cart page' })
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`)
 })
