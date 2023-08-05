@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import logo from './logo.svg';
 
-const HomePage = () => {
+function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,6 +14,6 @@ const HomePage = () => {
         </p>
       </header>
     </div>
-  )
+  );
 }
 export default HomePage;
